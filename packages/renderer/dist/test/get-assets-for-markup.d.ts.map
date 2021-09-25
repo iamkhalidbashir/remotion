@@ -1,0 +1,1 @@
+{"version":3,"file":"get-assets-for-markup.d.ts","sourceRoot":"","sources":["../../src/test/get-assets-for-markup.tsx"],"names":[],"mappings":"AACA,OAAO,KAMN,MAAM,OAAO,CAAC;AAEf,OAAO,EAA+B,MAAM,EAAC,MAAM,UAAU,CAAC;AAkB9D,eAAO,MAAM,kBAAkB,WACtB,MAAM,EAAE,UACR;IACP,gBAAgB,EAAE,MAAM,CAAC;IACzB,KAAK,EAAE,MAAM,CAAC;IACd,MAAM,EAAE,MAAM,CAAC;IACf,GAAG,EAAE,MAAM,CAAC;CACZ,wBAyED,CAAC"}

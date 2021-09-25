@@ -1,0 +1,1 @@
+{"version":3,"file":"update-available.d.ts","sourceRoot":"","sources":["../src/update-available.ts"],"names":[],"mappings":"AAKA,aAAK,cAAc,GAAG,KAAK,GAAG,MAAM,GAAG,SAAS,CAAC;AAEjD,oBAAY,IAAI,GAAG;IAClB,cAAc,EAAE,MAAM,CAAC;IACvB,aAAa,EAAE,MAAM,CAAC;IACtB,eAAe,EAAE,OAAO,CAAC;IACzB,QAAQ,EAAE,OAAO,CAAC;IAClB,cAAc,EAAE,cAAc,CAAC;CAC/B,CAAC;AAmBF,eAAO,MAAM,4BAA4B,qBAgBxC,CAAC"}

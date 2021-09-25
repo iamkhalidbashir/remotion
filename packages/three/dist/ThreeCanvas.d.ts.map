@@ -1,0 +1,1 @@
+{"version":3,"file":"ThreeCanvas.d.ts","sourceRoot":"","sources":["../src/ThreeCanvas.tsx"],"names":[],"mappings":"AAAA,OAAO,EAAE,MAAM,EAAY,MAAM,oBAAoB,CAAC;AACtD,OAAO,KAAoC,MAAM,OAAO,CAAC;AAGzD,oBAAY,gBAAgB,GAAG,KAAK,CAAC,cAAc,CAAC,OAAO,MAAM,CAAC,GAAG;IACpE,KAAK,EAAE,MAAM,CAAC;IACd,MAAM,EAAE,MAAM,CAAC;CACf,CAAC;AAaF,eAAO,MAAM,WAAW,UAAW,gBAAgB,gBA0BlD,CAAC"}

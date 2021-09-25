@@ -1,0 +1,1 @@
+{"version":3,"file":"os-file.js","sourceRoot":"","sources":["../../src/test/os-file.ts"],"names":[],"mappings":";;;AAAO,MAAM,YAAY,GAAG,CAAC,QAAgB,EAAE,EAAE;IAChD,IAAI,OAAO,CAAC,QAAQ,KAAK,OAAO,EAAE;QACjC,OAAO,QAAQ,CAAC,OAAO,CAAC,KAAK,EAAE,IAAI,CAAC,CAAC;KACrC;IAED,OAAO,QAAQ,CAAC;AACjB,CAAC,CAAC;AANW,QAAA,YAAY,gBAMvB"}
