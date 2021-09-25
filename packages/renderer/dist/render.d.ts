@@ -1,4 +1,3 @@
-/// <reference types="node" />
 import { Browser as PuppeteerBrowser } from 'puppeteer-core';
 import { Browser, BrowserExecutable, ConcurrentMode, FrameRange, ImageFormat, VideoConfig } from 'remotion';
 import { OnErrorInfo, OnStartData, RenderFramesOutput } from './types';

@@ -13,7 +13,7 @@ const getActualConcurrency = (userPreference) => {
     const max = os_1.default.cpus().length;
     const min = 1;
     if (rounded > max) {
-        throw new Error(`Maximum for --concurrency is ${max} (number of cores on this system)`);
+        console.warn(`Maximum for --concurrency is ${max} (number of cores on this system)`);
     }
     if (rounded < min) {
         throw new Error(`Minimum for concurrency is ${min}.`);
