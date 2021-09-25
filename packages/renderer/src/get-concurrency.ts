@@ -9,7 +9,7 @@ export const getActualConcurrency = (userPreference: number | null) => {
 	const max = os.cpus().length;
 	const min = 1;
 	if (rounded > max) {
-		throw new Error(
+		console.warn(
 			`Maximum for --concurrency is ${max} (number of cores on this system)`
 		);
 	}
