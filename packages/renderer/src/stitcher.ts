@@ -47,7 +47,7 @@ export type StitcherOptions = {
 	preEncodedFileLocation?: string;
 };
 
-const getAssetsData = async (options: StitcherOptions) => {
+export const getAssetsData = async (options: StitcherOptions) => {
 	const codec = options.codec ?? Internals.DEFAULT_CODEC;
 	const encoderName = getCodecName(codec);
 	const isAudioOnly = encoderName === null;
