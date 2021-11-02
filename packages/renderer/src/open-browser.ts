@@ -10,6 +10,7 @@ export const openBrowser = async (
 	options?: {
 		shouldDumpIo?: boolean;
 		browserExecutable?: string | null;
+		additionalArgs?: string[] | null;
 	}
 ): Promise<puppeteer.Browser> => {
 	if (browser === 'firefox' && !Internals.FEATURE_FLAG_FIREFOX_SUPPORT) {
@@ -33,6 +34,7 @@ export const openBrowser = async (
 			'--disable-setuid-sandbox',
 			'--disable-dev-shm-usage',
 			process.platform === 'linux' ? '--single-process' : null,
+			...(options?.additionalArgs || []),
 		].filter(Boolean) as string[],
 	});
 	return browserInstance;

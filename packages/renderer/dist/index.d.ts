@@ -21,6 +21,7 @@ export declare const RenderInternals: {
     openBrowser: (browser: import("remotion").Browser, options?: {
         shouldDumpIo?: boolean | undefined;
         browserExecutable?: string | null | undefined;
+        additionalArgs?: string[] | null | undefined;
     } | undefined) => Promise<import("puppeteer-core").Browser>;
     validateFfmpeg: () => Promise<void>;
     binaryExists: (name: "ffmpeg" | "brew") => Promise<boolean>;

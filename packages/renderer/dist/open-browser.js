@@ -23,6 +23,7 @@ const openBrowser = async (browser, options) => {
             '--disable-setuid-sandbox',
             '--disable-dev-shm-usage',
             process.platform === 'linux' ? '--single-process' : null,
+            ...((options === null || options === void 0 ? void 0 : options.additionalArgs) || []),
         ].filter(Boolean),
     });
     return browserInstance;

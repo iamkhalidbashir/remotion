@@ -3,7 +3,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.stitchFramesToVideo = exports.spawnFfmpeg = void 0;
+exports.stitchFramesToVideo = exports.spawnFfmpeg = exports.getAssetsData = void 0;
 const execa_1 = __importDefault(require("execa"));
 const remotion_1 = require("remotion");
 const assets_to_ffmpeg_inputs_1 = require("./assets-to-ffmpeg-inputs");
@@ -70,6 +70,7 @@ const getAssetsData = async (options) => {
         assetPaths,
     };
 };
+exports.getAssetsData = getAssetsData;
 // eslint-disable-next-line complexity
 const spawnFfmpeg = async (options) => {
     var _a, _b, _c, _d, _e;
@@ -106,7 +107,7 @@ const spawnFfmpeg = async (options) => {
     remotion_1.Internals.validateSelectedCrfAndCodecCombination(crf, codec);
     remotion_1.Internals.validateSelectedPixelFormatAndImageFormatCombination(pixelFormat, imageFormat);
     remotion_1.Internals.validateSelectedPixelFormatAndCodecCombination(pixelFormat, codec);
-    const { complexFilterFlag = undefined, cleanup = undefined, frameInfo = undefined, assetPaths = undefined, } = options.parallelEncoding ? {} : await getAssetsData(options);
+    const { complexFilterFlag = undefined, cleanup = undefined, frameInfo = undefined, assetPaths = undefined, } = options.parallelEncoding ? {} : await (0, exports.getAssetsData)(options);
     const ffmpegArgs = [
         ['-r', String(options.fps)],
         ...(options.preEncodedFileLocation

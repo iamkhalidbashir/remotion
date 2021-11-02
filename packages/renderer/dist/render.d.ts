@@ -19,7 +19,7 @@ export declare const renderFrames: ({ config, parallelism, onFrameUpdate, compos
     puppeteerInstance?: PuppeteerBrowser[] | undefined;
     browserExecutable?: BrowserExecutable | undefined;
     onError?: ((info: OnErrorInfo) => void) | undefined;
-    concurrentMode?: "tab" | "browser" | undefined;
+    concurrentMode?: "browser" | "tab" | undefined;
     parallelEncoding?: boolean | undefined;
     writeFrame?: ((buffer?: Buffer | undefined) => void) | undefined;
 }) => Promise<RenderFramesOutput>;

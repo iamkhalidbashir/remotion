@@ -20,6 +20,15 @@ export declare type StitcherOptions = {
     parallelEncoding?: boolean;
     preEncodedFileLocation?: string;
 };
+export declare const getAssetsData: (options: StitcherOptions) => Promise<{
+    complexFilterFlag: [string, string] | null;
+    cleanup: () => void;
+    frameInfo: {
+        numberLength: number;
+        startNumber: number;
+    } | null | undefined;
+    assetPaths: string[];
+}>;
 export declare const spawnFfmpeg: (options: StitcherOptions) => Promise<{
     task: execa.ExecaChildProcess<string>;
     cleanup: (() => void) | undefined;
